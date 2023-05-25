@@ -1,5 +1,0 @@
-/*!
-* Chess Assist (https://chessassist.net)
-* Copyright 2022-2023, Chess Assist, All rights reserved.
-*/
-function bakne(){chrome.debugger.onDetach.addListener((function(){chrome.storage.local.set({atpl_function:!1})})),chrome.runtime.onMessage.addListener((function(e,t){if("string"==typeof e)"lga-datas-atch"==e?chrome.debugger.attach({tabId:t.tab.id},"1.3"):"lga-datas-dtch"==e&&chrome.debugger.getTargets((function(e){for(var t=e.length-1;t>=0;t--)void 0!==e[t].tabId&&1==e[t].attached&&chrome.debugger.detach({tabId:e[t].tabId})}));else if("object"==typeof e&&"lga-datas-snmd"==e.val0)switch(e.val1){case"p":chrome.debugger.sendCommand({tabId:t.tab.id},"Input.dispatchMouseEvent",{type:"mousePressed",x:e.val2,y:e.val3,button:"left",clickCount:1});break;case"r":chrome.debugger.sendCommand({tabId:t.tab.id},"Input.dispatchMouseEvent",{type:"mouseReleased",x:e.val2,y:e.val3,button:"left",clickCount:1})}}));var e=navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./);(!!e&&parseInt(e[2],10))>=48&&chrome.privacy.network.webRTCIPHandlingPolicy.set({value:"disable_non_proxied_udp"})}bakne();
